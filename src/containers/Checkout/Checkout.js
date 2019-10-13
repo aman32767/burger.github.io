@@ -14,6 +14,7 @@ class Checkout extends Component {
   };
 
   onCheckoutContinueHandler = () => {
+    alert("Please Enter Details Carefully! ")
     this.props.history.replace('/checkout/details');
   };
   render() {
