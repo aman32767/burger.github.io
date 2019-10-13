@@ -14,11 +14,11 @@ class Checkout extends Component {
   };
 
   onCheckoutContinueHandler = () => {
-    this.props.history.replace('/burger/checkout/details');
+    this.props.history.replace('/checkout/details');
   };
   render() {
-    let summary = <Redirect to="/burger/" />;
-    const purchasedRedirect = this.props.purchased ? <Redirect to="/burger/" /> : null;
+    let summary = <Redirect to="/" />;
+    const purchasedRedirect = this.props.purchased ? <Redirect to="/" /> : null;
     if (this.props.ings) {
       summary = (
         <div>
