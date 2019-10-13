@@ -14,7 +14,7 @@ class Checkout extends Component {
   };
 
   onCheckoutContinueHandler = () => {
-    this.props.history.replace('/burger/checkout/details');
+    this.props.history.replace('/checkout/details');
   };
   render() {
     let summary = <Redirect to="/" />;
