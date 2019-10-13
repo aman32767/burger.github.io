@@ -17,8 +17,8 @@ class Checkout extends Component {
     this.props.history.replace('/burger/checkout/details');
   };
   render() {
-    let summary = <Redirect to="/burger/" />;
-    const purchasedRedirect = this.props.purchased ? <Redirect to="/burger/" /> : null;
+    let summary = <Redirect to="/" />;
+    const purchasedRedirect = this.props.purchased ? <Redirect to="/" /> : null;
     if (this.props.ings) {
       summary = (
         <div>
@@ -29,7 +29,7 @@ class Checkout extends Component {
             onCheckoutContinued={this.onCheckoutContinueHandler}
           />
           <Route
-            path={this.props.match.path + '/burger/checkout/details'}
+            path={this.props.match.path + '/details'}
             component={ContactData}
           />
         </div>
