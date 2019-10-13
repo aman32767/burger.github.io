@@ -14,7 +14,7 @@ class Checkout extends Component {
   };
 
   onCheckoutContinueHandler = () => {
-    this.props.history.replace('/burger/burgercheckout/details');
+    this.props.history.replace('/burger/checkout/details');
   };
   render() {
     let summary = <Redirect to="/" />;
@@ -29,7 +29,7 @@ class Checkout extends Component {
             onCheckoutContinued={this.onCheckoutContinueHandler}
           />
           <Route
-            path={this.props.match.path + '/burger/burgerdetails'}
+            path={this.props.match.path + '/details'}
             component={ContactData}
           />
         </div>
